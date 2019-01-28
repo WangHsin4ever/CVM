@@ -69,7 +69,6 @@ library(emo)
 在進行分析之前，先安裝以下基本套件
 
 ```{r}
-Sys.setlocale("LC_ALL","C")
 packages = c(
   "dplyr","ggplot2","googleVis","devtools","magrittr","caTools","ROCR","caTools")
 existing = as.character(installed.packages()[,1])
@@ -489,24 +488,20 @@ CX$ProbRetain = predict(mRet,CX,type='response')
 CX$PredRevenue = exp(predict(mRev,CX))
 ```
 
-+ CX = Y$Y2015 ; names(CX)[8:9] = c(“freq0”,“revenue0”)
-將資料框 CX 的資料更改為 2015 年的資料，並將變數欄位 8、9 更改為模型可以認知的名稱 freq0 及 revenue0。
-+ CX$ProbRetain = predict(mRet,CX,type=‘response’)
-將類別預測模型 ( 2016 年是否會來消費 ) 預測的結果存為 CX 中的 ProbRetain。
-+ CX$PredRevenue = exp(predict(mRev,CX))
-將數量預測模型 ( 2016 年會消費多少金額 ) 預測的結果存為 CX 中的 PredRevenue。
++ 將資料框 CX 的資料更改為 2015 年的資料，並將變數欄位 8、9 更改為模型可以認知的名稱 freq0 及 revenue0。
++ 將類別預測模型 ( 2016 年是否會來消費 ) 預測的結果存為 CX 中的 ProbRetain。
++ 將數量預測模型 ( 2016 年會消費多少金額 ) 預測的結果存為 CX 中的 PredRevenue。
 
 ```{r fig.height=2.5, fig.width=8}
 par(mfrow=c(1,2), mar=c(4,3,3,2), cex=0.8)
 hist(CX$ProbRetain,main="ProbRetain", ylab="")
 hist(log(CX$PredRevenue,10),main="log(PredRevenue)", ylab="")
 ```
-+ par(mfrow=c(1,2), mar=c(4,3,3,2), cex=0.8)
-基礎繪圖設定，接下來的圖為一列兩行併為一張圖，邊界為 4,3,3,2，整體大小為 0.8。
-+ hist(CX$ProbRetain,main=“ProbRetain”, ylab=“”)
-繪製第一個模型的預測結果柱狀圖。
-+ hist(log(CX$PredRevenue,10),main=“log(PredRevenue)”, ylab=“”)
-繪製第二個模型的預測結果柱狀圖。注意金額的數字有取 log10。
+
++ 基礎繪圖設定，接下來的圖為一列兩行併為一張圖，邊界為 4,3,3,2，整體大小為 0.8。
++ 繪製第一個模型的預測結果柱狀圖。
++ 繪製第二個模型的預測結果柱狀圖。注意金額的數字有取 log10。
+
 <br>
 
 ##### 5.2 估計顧客終生價值(CLV)
