@@ -8,7 +8,7 @@ output:  html_document
 ```{r}
 library(emo)
 ```
-####[`r emo::ji("sparkler")`想看預告片可以點我](https://youtu.be/DU6CV7a9jjY) 
+####[`r emo::ji("teacher")`想看預告片可以點我](https://youtu.be/DU6CV7a9jjY) 
 
 ### 前言：從交易記錄到顧客價值
 
@@ -91,7 +91,7 @@ library(googleVis)
 library(chorddiag)
 ```
 <br><hr>
-####[`r emo::ji("sparkler")`第一集影片底加](https://youtu.be/sBOMTbYjfzI) 
+####[`r emo::ji("teacher")`第一集影片底加](https://youtu.be/sBOMTbYjfzI) 
 
 ### 1 1. 資料整理
 
@@ -243,7 +243,7 @@ group_by(A, grp) %>% summarise(
 <br><hr>
 
 
-####[`r emo::ji("sparkler")`第二集影片底加](https://youtu.be/kc7u6PLu7us)
+####[`r emo::ji("teacher")`第二集影片底加](https://youtu.be/kc7u6PLu7us)
 
 ### 3. 規則分群
 
@@ -470,7 +470,7 @@ abline(0,1,col='red')
 <br><hr>
 
 
-####[`r emo::ji("sparkler")`第三集影片底加](https://youtu.be/woZZNYyyyBc)
+####[`r emo::ji("teacher")`第三集影片底加](https://youtu.be/woZZNYyyyBc)
 
 ### 5. 估計顧客終生價值
 
