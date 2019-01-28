@@ -1,5 +1,5 @@
 ---
-title: "CVM：顧客價值管理 "
+title: "CVM：顧客價值管理"
 author: "吳欣容、黃柏融、王欣, 2018/12/24"
 output:  html_document
 ---
