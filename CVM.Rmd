@@ -336,7 +336,7 @@ head(CustSegments)
 ```
 我們簡單看一下每一年不同顧客分群及其各特性的平均值。
 
-```{r M1, eval=FALSE, results='asis', tidy=FALSE}
+```{r M1, results='asis', tidy=FALSE}
 op = options(gvis.plot.tag='chart')
 m1 = gvisMotionChart(
   CustSegments, "status", "year",
