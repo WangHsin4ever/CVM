@@ -225,6 +225,7 @@ group_by(A, grp) %>% summarise(
   xlab("Frequency (log)") + ylab("Average Transaction Amount (log)")
 
 ```
+
 圖形解析：
 
 + 將現有顧客分成十群，每個泡泡分別代表一群。
