@@ -8,7 +8,9 @@ output:  html_document
 ```{r}
 library(emo)
 ```
-####[`r emo::ji("teacher")`想看預告片可以點我](https://youtu.be/DU6CV7a9jjY) 
+
+# [`r emo::ji("teacher")`](https://youtu.be/DU6CV7a9jjY) 
+點我看教學影片 (ctrl + click)
 
 ### 前言：從交易記錄到顧客價值
 
@@ -91,7 +93,9 @@ library(googleVis)
 library(chorddiag)
 ```
 <br><hr>
-####[`r emo::ji("teacher")`第一集影片底加](https://youtu.be/sBOMTbYjfzI) 
+
+# [`r emo::ji("teacher")`](https://youtu.be/sBOMTbYjfzI) 
+第一集影片底加 (ctrl + click)
 
 ### 1 1. 資料整理
 
@@ -242,8 +246,8 @@ group_by(A, grp) %>% summarise(
 
 <br><hr>
 
-
-####[`r emo::ji("teacher")`第二集影片底加](https://youtu.be/kc7u6PLu7us)
+# [`r emo::ji("teacher")`](https://youtu.be/kc7u6PLu7us) 
+第二集影片底加 (ctrl + click)
 
 ### 3. 規則分群
 
@@ -340,7 +344,7 @@ head(CustSegments)
 op = options(gvis.plot.tag='chart')
 m1 = gvisMotionChart(
   CustSegments, "status", "year",
-  options=list(width=900, height=600) )
+  options=list(width=720, height=480) )
 plot(m1)
 ```
 
@@ -469,8 +473,8 @@ abline(0,1,col='red')
 ```
 <br><hr>
 
-
-####[`r emo::ji("teacher")`第三集影片底加](https://youtu.be/woZZNYyyyBc)
+# [`r emo::ji("teacher")`](https://youtu.be/woZZNYyyyBc) 
+第三集影片底加 (ctrl + click)
 
 ### 5. 估計顧客終生價值
 
