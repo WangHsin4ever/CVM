@@ -9,7 +9,7 @@ output:  html_document
 library(emo)
 ```
 
-# [`r emo::ji("teacher")`](https://youtu.be/DU6CV7a9jjY) 
+# [`r emo::ji("peach")`](https://youtu.be/DU6CV7a9jjY) 
 點我看教學影片 (ctrl + click)
 
 ### 前言：從交易記錄到顧客價值
