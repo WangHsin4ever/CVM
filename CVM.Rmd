@@ -4,10 +4,7 @@ author: "吳欣容、黃柏融、王欣, 2018/12/24"
 output:  html_document
 ---
 
-<br>
-```{r}
-library(emo)
-```
+<br><br>
 
 # [`r emo::ji("teacher")`](https://youtu.be/DU6CV7a9jjY) 
 點我看教學影片 (ctrl + click)
@@ -349,11 +346,16 @@ m1 = gvisMotionChart(
 plot(m1)
 ```
 
-<center>
+<br>
+<span style="font-size:36px">`r emo::ji("light_bulb")`</span>
+<span style="color:red">
+您可能需要在瀏覽器設定`Allow Flash`，才能在這裏操作互動式的泡泡圖；
+</span><br>
+利用動態泡泡圖，我們可追蹤各顧客族群的中、長期變化趨勢，如下圖所示，<br>
+四個主要顧客族群在過去幾年間變化的趨勢都不一樣。
+
 
 ![圖四、顧客分群規則](fig/fig4.png)
-
-</center>
 
 
 ##### 3.7 族群屬性動態分析
